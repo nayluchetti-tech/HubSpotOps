@@ -80,7 +80,6 @@ Contact
         • Lead Pipeline Stage (sync from lead) (lead_pipeline_stage)
             ⤷ This property transfers information from the Lead Pipeline Stage to the Contact.
         • Leader Name (sync from leader) (associated_leader_name)
-            ⤷ This property is synchronized with the Name field of the most recent Leader associated with this deal. The Associated Leader Name property ensures a Leader is tied to this negotiation if this involves a current leader. To populate this property, the deal’s owner must associate a Leader with the deal.
         • Ministry Website URL (Lead Ads) (ministry_website_url)
             ⤷ Lead Ad Properties
         • Most recently created company record ID (most_recently_created_company_record_id)
@@ -306,9 +305,7 @@ Contact
             ◦ Referral
             ◦ SBC 2024
         • Segmentation (segmentation)
-            ⤷ The property where the team can enter manual segment adjustments when the AI data is inaccurate or needs tweaking.
         • Source (source)
-            ⤷ How did this contact hear about pray.com
         • Streak (streak)
         • Streaking (streaking)
             ⤷ Has the person streaked in the last month
@@ -882,7 +879,6 @@ Contact
             ◦ No
     • plg
         • Leader Name (plg - out of use) (leader_name)
-            ⤷ The name of the leader as it should appear on the PRAY APP. If a Leader is linked to the deal, a workflow will copy that information from the Leader. - Suppose there is no Leader associated with this deal. In that case, the operator can input the leader’s name, allowing HubSpot to trigger a workflow that creates the necessary associations and establishes a new leader if one does not already exist.
         • PLG Revenue (plg_revenue)
         • PLG Status (plg_status)
             ◦ Active Trial
@@ -897,7 +893,6 @@ Contact
         • Upsell Solicitation Date (upsell_solicitation_date)
         • plan name (plan_name)
         • price (price)
-            ⤷ Cost of product
         • recurring (monthly or yearly) (recurring__monthly_or_yearly_)
     • properties_to_archieve
         • Annual Revenue (annualrevenue)
@@ -1002,7 +997,6 @@ Contact
             ⤷ The probability that a contact will become a customer within the next 90 days. This score is based on standard contact properties and behavior.
         • Prospecting Agent Total Enrolled Count (hs_prospecting_agent_total_enrolled_count)
         • SDR Support (sdr_support)
-            ⤷ Did an SDR book the meeting that led to this qualified deal?
             ◦ Katie Everett
             ◦ Michelle Evans
         • SalesCo Lead (salesco_lead)
@@ -1098,7 +1092,6 @@ Contact
         • Twitter Clicks (hs_social_twitter_clicks)
             ⤷ The number of times a contact clicked on links you shared on Twitter through HubSpot. This is set automatically by HubSpot and can be used for segmentation.
         • Youtube Followers (youtube_followers)
-            ⤷ The total number of Youtube followers was recorded during the last count.
     • source_and_attribuition
         • Campaign of last booking in meetings tool (engagements_last_meeting_booked_campaign)
             ⤷ This UTM parameter shows which marketing campaign (e.g. a specific email) referred the contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
@@ -1227,14 +1220,14 @@ Company
             ⤷ Numeric estimate of the company’s annual revenue by range.
         • TikTok Page Link (tiktok_page_link)
         • Twitter Bio (twitterbio)
-            ⤷ The contact's Twitter bio. This is set by HubSpot using the contact's email address.
+            ⤷ The Twitter bio of the company or organization
         • Twitter Followers (twitterfollowers)
             ⤷ The number of Twitter followers of the company or organization
         • Twitter Handle (twitterhandle)
             ⤷ The main twitter account of the company or organization
     • 2_-source_and_attribution
         • Campaign of last booking in meetings tool (engagements_last_meeting_booked_campaign)
-            ⤷ This UTM parameter shows which marketing campaign (e.g. a specific email) referred the contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
+            ⤷ This UTM parameter shows which marketing campaign (e.g. a specific email) referred an associated contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
         • Conference Name (conference_name)
             ◦ A.R Bernard Golf Tournament
             ◦ BCI
@@ -1275,11 +1268,11 @@ Company
             ◦ Other
             ◦ NOT NRB
         • First Touch Converting Campaign (hs_analytics_first_touch_converting_campaign)
-            ⤷ The campaign responsible for the first touch creation of this contact
+            ⤷ The campaign responsible for the first touch creation of the first contact associated with this company
         • Last Touch Converting Campaign (hs_analytics_last_touch_converting_campaign)
-            ⤷ The campaign responsible for the last touch creation of this contact
+            ⤷ The campaign responsible for the last touch creation of the first contact associated with this company
         • Latest Traffic Source (hs_analytics_latest_source)
-            ⤷ Source for the contact either directly or indirectly associated with the last session activity for this deal
+            ⤷ Source of the last session attributed to any contacts that are associated with this company
             ◦ Organic Search (ORGANIC_SEARCH)
             ◦ Paid Search (PAID_SEARCH)
             ◦ Email Marketing (EMAIL_MARKETING)
@@ -1291,24 +1284,24 @@ Company
             ◦ Paid Social (PAID_SOCIAL)
             ◦ AI Referrals (AI_REFERRALS)
         • Latest Traffic Source Data 1 (hs_analytics_latest_source_data_1)
-            ⤷ Additional source details of the last session attributed to any contacts that are directly or indirectly associated with this deal
+            ⤷ Additional source details of the last session attributed to any contacts that are associated with this company
         • Latest Traffic Source Data 2 (hs_analytics_latest_source_data_2)
-            ⤷ Additional source details of the last session attributed to any contacts that are directly or indirectly associated with this deal
+            ⤷ Additional source details of the last session attributed to any contacts that are associated with this company
         • Marketing attribution (linear_touch_marketing_attribution)
-            ⤷ Indicates whether the affiliated companies engaged in any marketing initiatives. This information is generated through a workflow that conveys the details from the parent company to the deal.
+            ⤷ A workflow populates this drop-down property based on whether a contact submits an organic or paid form, or attends a marketing event after their first conversion.
             ◦ Paid Advertisement (Paid BOFU Form)
             ◦ PRAYStudio PLG Ad
             ◦ Website Organic (Organic BOFU Form)
             ◦ Live Events (Event Attendance)
             ◦ Instagram Outreach
         • Medium of last booking in meetings tool (engagements_last_meeting_booked_medium)
-            ⤷ This UTM parameter shows which channel (e.g. email) referred the contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
+            ⤷ This UTM parameter shows which channel (e.g. email) referred an associated contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
         • Original Source Data 1 (hs_analytics_source_data_1)
-            ⤷ Additional information about the source through which a contact first found your website. This property is automatically set by HubSpot.
+            ⤷ Additional information about the original source for the contact with the earliest activity for this company or organization
         • Original Source Data 2 (hs_analytics_source_data_2)
-            ⤷ Additional information about the source through which a contact first found your website. This property is automatically set by HubSpot.
+            ⤷ Additional information about the original source for the contact with the earliest activity for this company or organization
         • Original Source Type (hs_analytics_source)
-            ⤷ First known source the contact used to find your website. Set automatically, but may be updated manually.
+            ⤷ Original source for the contact with the earliest activity for this company or organization
             ◦ Organic Search (ORGANIC_SEARCH)
             ◦ Paid Search (PAID_SEARCH)
             ◦ Email Marketing (EMAIL_MARKETING)
@@ -1333,14 +1326,14 @@ Company
         • Record source detail 3 (hs_object_source_detail_3)
             ⤷ Third level of detail on how this record was created.
         • Source of last booking in meetings tool (engagements_last_meeting_booked_source)
-            ⤷ This UTM parameter shows which site (e.g. Twitter) referred the contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
+            ⤷ This UTM parameter shows which site (e.g. Twitter) referred an associated contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
     • 4-deal_information
         • Close Date (closedate)
-            ⤷ The date that a contact became a customer. This property is set automatically by HubSpot when a deal or opportunity is marked as closed-won. It can also be set manually or programmatically.
+            ⤷ The date the company or organization was closed as a customer
         • Recent Deal Amount (recent_deal_amount)
-            ⤷ The amount of the last closed won deal associated with a contact. This is set automatically by HubSpot based on information from the Deals object.
+            ⤷ The amount of the last deal closed
         • Total Revenue (total_revenue)
-            ⤷ The sum from all closed won deal revenue associated with a contact. This is automatically set by HubSpot and can be used for segmentation and reporting.
+            ⤷ The total amount of closed won deals
         • Total open deal value (hs_total_deal_value)
             ⤷ The total value, in your company's currency, of all open deals associated with this company
     • avoma
@@ -1362,7 +1355,7 @@ Company
     • companyinformation
         • Buying Intent (combined_score_01_29_2026_8_29_am_engagement)
         • GPS Error (hs_gps_error)
-            ⤷ Specifies any errors that may have occurred while geocoding a contact.
+            ⤷ This property specifies any error that may have occurred while geocoding a CRM object.
         • Growth Priorities (growth_priorities)
             ⤷ What are your top priorities for ministry growth this year? Select up to 3 that matter most.
             ◦ Reaching more people beyond our current audience
@@ -1384,9 +1377,9 @@ Company
             ◦ Pricing and partnership options
             ◦ Not actively growing right now, just staying informed
         • Latitude (hs_latitude)
-            ⤷ A contact's latitude
+            ⤷ A company's latitude
         • Longitude (hs_longitude)
-            ⤷ A contact's longitude
+            ⤷ A company's longitude
         • Product Market Fit (combined_score_01_29_2026_8_29_am_total)
         • Product Market Fit Thresholds (combined_score_01_29_2026_8_29_am_threshold)
             ◦ A1
@@ -1406,13 +1399,13 @@ Company
         • Latest time in "Lifecycle Stage Pipeline"
     • core_info
         • City (city)
-            ⤷ A contact's city of residence
+            ⤷ The city where the company is located. Powered by HubSpot Insights.
         • Company owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
+            ⤷ The owner of the company
         • Country/Region (country)
-            ⤷ The contact's country/region of residence. This might be set via import, form, or integration.
+            ⤷ The country/region in which the company or organization is located.
         • Create Date (createdate)
-            ⤷ The date that a contact entered the system
+            ⤷ The date the company or organization was added to the database
         • Created by user ID (hs_created_by_user_id)
             ⤷ The user who created this record. This value is set automatically by HubSpot.
         • First Contact Create Date (first_contact_createdate)
@@ -1424,15 +1417,15 @@ Company
         • Owner assigned date (hubspot_owner_assigneddate)
             ⤷ The most recent timestamp of when an owner was assigned to this record. This value is set automatically by HubSpot.
         • Phone Number (phone)
-            ⤷ A contact's primary phone number
+            ⤷ Company primary phone number.
         • Postal Code (zip)
-            ⤷ The contact's zip code. This might be set via import, form, or integration.
+            ⤷ The postal or zip code of the company or organization. Powered by HubSpot Insights.
         • State/Region (state)
-            ⤷ The contact's state of residence. This might be set via import, form, or integration.
+            ⤷ State or region in which the company or organization is located.
         • State/Region Code (hs_state_code)
-            ⤷ The contact's state or region code.
+            ⤷ The company's state or region code.
         • Street Address (address)
-            ⤷ A contact's street address, including apartment or unit #
+            ⤷ The street address of the company or organization, including unit number. Powered by HubSpot Insights.
         • Street Address 2 (address2)
             ⤷ The additional address of the company or organization. Powered by HubSpot Insights.
         • Time Zone (timezone)
@@ -1440,7 +1433,7 @@ Company
         • Updated by user ID (hs_updated_by_user_id)
             ⤷ The user who last updated this record. This value is set automatically by HubSpot.
         • Website URL (website)
-            ⤷ The contact's company website
+            ⤷ The main website of the company or organization. This property is used to identify unique companies. Powered by HubSpot Insights.
     • discontinued
         • Church Email (church_email)
         • Community Size (community_size)
@@ -1471,7 +1464,7 @@ Company
         • Facebook Fans (facebookfans)
             ⤷ Number of facebook fans
         • Giving Enabled (giving_enabled)
-            ⤷ Is giving enabled for Org?
+            ⤷ Does the organization have giving enabled?
         • Has Facebook Page (has_facebook_page)
             ◦ Yes (true)
             ◦ No (false)
@@ -1507,7 +1500,6 @@ Company
             ◦ 100 to 1k
             ◦ 1k to 10k
         • Payment Terms (payment_terms)
-            ⤷ The terms of payment for the deal (e.g., Net 30, Advanced Payment, Due on Receipt).
             ◦ Net 30
             ◦ Advanced Payment
             ◦ Due on Receipt
@@ -1564,9 +1556,8 @@ Company
             ◦ Ads Agency [HIDDEN]
             ◦ Other
         • Denomination (denomination)
-            ⤷ Denomination if a religious org
         • Description (description)
-            ⤷ Description of the deal
+            ⤷ A short statement about the company's mission and goals. Powered by HubSpot Insights.
         • Estimated Employee range (estimated_employee_range)
             ◦ Fewer than 10
             ◦ 10 - 29 (10 - 30)
@@ -1595,13 +1586,12 @@ Company
             ⤷ The URL of the Facebook company page for the company or organization
         • Giving Page URL (giving_page_url)
         • Industry (industry)
-            ⤷ The industry a contact is in When this property is empty, information is copied from the company to the contact.
+            ⤷ The type of business the company performs. By default, this property has approximately 150 pre-defined options to select from. While these options cannot be deleted, you can add new custom options to meet your needs.
         • Industry group (hs_industry_group)
             ⤷ Second tier of company industry classification.
         • Instagram Page Link (instagram_page_link)
         • Lead Pastor Name (lead_pastor_name)
         • Leader Name (leader_name)
-            ⤷ The name of the leader as it should appear on the PRAY APP. If a Leader is linked to the deal, a workflow will copy that information from the Leader. - Suppose there is no Leader associated with this deal. In that case, the operator can input the leader’s name, allowing HubSpot to trigger a workflow that creates the necessary associations and establishes a new leader if one does not already exist.
         • Ministry Owner (ministry_owner)
         • Number of locations (local_church_number_of_locations)
             ⤷ The total number of locations that the church has.
@@ -1718,7 +1708,7 @@ Company
     • internal/ops
         • AI Org Classification Category (ai_org_classification_category)
         • Annual Revenue (annualrevenue)
-            ⤷ Annual company revenue When this property is empty, information is copied from the company to the contact.
+            ⤷ The actual or estimated annual revenue of the company. Powered by HubSpot Insights.
         • Church member count (church_member_count)
             ⤷ Total number of church members across all locations.
         • Company Keywords (AI) (company_keywords__ai)
@@ -1737,15 +1727,14 @@ Company
         • Instagram followers (instagram_followers)
             ⤷ The total number of Instagram followers was recorded during the last count.
         • Last Modified Date (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
+            ⤷ Most recent timestamp of any property update for this company. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
         • LinkedIn Bio (linkedinbio)
-            ⤷ A contact's LinkedIn bio
+            ⤷ The LinkedIn bio for the company or organization
         • Linkedin followers (linkedin_followers)
             ⤷ The total number of Linkedin followers was recorded during the last count.
         • Merged Company IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
+            ⤷ The list of Company record IDs that have been merged into this Company. This value is set automatically by HubSpot.
         • Ministry Name (ministry_name)
-            ⤷ Since the leader and ministry names can vary, this field is designated to set both names.
         • Number of Employees (numberofemployees)
             ⤷ The total number of employees who work for the company or organization
         • Parent Company (hs_parent_company_id)
@@ -1753,7 +1742,7 @@ Company
         • Pray Company ID (pray_company_id)
             ⤷ We created this for Gainsight and made it available only to admins. We can use it as a Key connector for data modeling.
         • Segment (Consolidated) (saas_segment)
-            ⤷ It’s a Snapshot of the parent company’s size when the deal is created. The workflow copies the information from the Primary Company -> Segment (Consolidated) property.
+            ⤷ Considering the size of this company, how does it fit our ICP criteria?
             ◦ #1 Whale - Over $5M (Whale)
             ◦ #2 Elephant - $3M – $5M (Elephant)
             ◦ #3 Deer - $1M – $3M (Deer)
@@ -1781,7 +1770,7 @@ Company
         • Company Domain Name (domain)
             ⤷ The domain name of the company or organization
         • Company name (name)
-            ⤷ Name
+            ⤷ The name of the company or organization. Powered by HubSpot Insights.
         • LinkedIn Company Page (linkedin_company_page)
             ⤷ The URL of the LinkedIn company page for the company or organization
         • Record ID (hs_object_id)
@@ -1792,19 +1781,19 @@ Company
             ◦ Wrong Input
     • lifecycle&status
         • Date of last meeting booked in meetings tool (engagements_last_meeting_booked)
-            ⤷ The date of the last meeting that has been scheduled by a contact through the meetings tool. If multiple meetings have been scheduled, the date of the last chronological meeting in the timeline is shown.
+            ⤷ The date of the most recent meeting an associated contact has booked through the meetings tool.
         • First Conversion (first_conversion_event_name)
-            ⤷ The first form this contact submitted
+            ⤷ The first form submitted across all contacts associated this company or organization
         • First Conversion Date (first_conversion_date)
-            ⤷ The date this contact first submitted a form
+            ⤷ The first conversion date across all contacts associated this company or organization
         • First Deal Created Date (first_deal_created_date)
-            ⤷ The date the first deal for a contact was created. This is automatically set by HubSpot and can be used for segmentation and reporting.
+            ⤷ The create date of the first deal associated with this company record.
         • Last Activity Date (notes_last_updated)
-            ⤷ The last time a note, call, email, meeting, or task was logged for a contact. This is set automatically by HubSpot based on user actions in the contact record.
+            ⤷ The last time a note, call, meeting, or task was logged for a company. This is set automatically by HubSpot based on user actions in the company record.
         • Last Booked Meeting Date (hs_last_booked_meeting_date)
             ⤷ The last date of booked meetings associated with the company
         • Last Contacted (notes_last_contacted)
-            ⤷ The last time a call, email, or meeting was logged for a contact. This is set automatically by HubSpot based on user actions in the contact record.
+            ⤷ The last timestamp when a call, email or meeting was logged for a contact at this company.
         • Last Engagement Date (hs_last_sales_activity_timestamp)
             ⤷ The last time a contact engaged with your site or a form, document, meetings link, or tracked email. This doesn't include marketing emails or emails to multiple contacts.
         • Last Logged Call Date (hs_last_logged_call_date)
@@ -1816,9 +1805,9 @@ Company
         • Last Tracked Visit Time (hs_most_recent_de_anonymized_visit)
             ⤷ Most recent de-anonymized visit
         • Latest Traffic Source Timestamp (hs_analytics_latest_source_timestamp)
-            ⤷ Timestamp of when latest source occurred for either a directly or indirectly associated contact
+            ⤷ Timestamp of when latest source occurred
         • Lead Status (hs_lead_status)
-            ⤷ The contact's sales, prospecting or outreach status
+            ⤷ The company's sales, prospecting or outreach status
             ◦ New (NEW)
             ◦ Attempted to Contact (ATTEMPTED_TO_CONTACT)
             ◦ Connected (CONNECTED)
@@ -1828,37 +1817,37 @@ Company
             ◦ Bad Timing (BAD_TIMING)
             ◦ Attempting
         • Lifecycle Stage (lifecyclestage)
-            ⤷ The qualification of contacts to sales readiness. It can be set through imports, forms, workflows, and manually on a per contact basis.
+            ⤷ The qualification of companies to sales readiness throughout the buying journey
         • Next Activity Date (notes_next_activity_date)
-            ⤷ The date of the next upcoming activity for a contact. This is set automatically by HubSpot based on user actions in the contact record.
+            ⤷ The date of the next upcoming scheduled sales activity for this company record.
         • Number of Associated Contacts (num_associated_contacts)
-            ⤷ The number of contacts associated with this deal. This property is set automatically by HubSpot.
+            ⤷ The number of contacts associated with this company
         • Number of Associated Deals (num_associated_deals)
-            ⤷ The number of deals associated with this contact. This is set automatically by HubSpot.
+            ⤷ The number of deals associated with this company
         • Number of Form Submissions (num_conversion_events)
-            ⤷ The number of forms this contact has submitted
+            ⤷ The number of form submissions for all contacts which have this company as their Primary company.
         • Number of Pageviews (hs_analytics_num_page_views)
-            ⤷ The sum of all pages a contact has seen on your website. This is automatically set by HubSpot for each contact.
+            ⤷ Total number of page views across all contacts associated with this company or organization
         • Number of Sessions (hs_analytics_num_visits)
-            ⤷ The sum of all sessions a contact has made to your website. This is automatically set by HubSpot for each contact.
+            ⤷ Total number of sessions across all contacts associated with this company or organization
         • Number of open deals (hs_num_open_deals)
             ⤷ The number of open deals associated with this company.
         • Number of times contacted (num_contacted_notes)
-            ⤷ The number of times a call, email, or meeting was logged for a contact. This is set automatically by HubSpot based on user actions in the contact record.
+            ⤷ The number of times a call, email or meeting was logged for this company
         • Recent Conversion (recent_conversion_event_name)
-            ⤷ The last form this contact submitted
+            ⤷ The last form submitted across all contacts associated this company or organization
         • Recent Conversion Date (recent_conversion_date)
-            ⤷ The date this contact last submitted a form
+            ⤷ The most recent conversion date across all contacts associated this company or organization
         • Recent Deal Close Date (recent_deal_close_date)
-            ⤷ The date that the last deal associated with a contact was won. This is automatically set by HubSpot based on information from the Deals object.
+            ⤷ The date of the last `closed won` deal associated with this company record.
         • Time First Seen (hs_analytics_first_timestamp)
-            ⤷ The first time a contact has been seen. This is automatically set by HubSpot for each contact.
+            ⤷ The first activity for any contact associated with this company or organization
         • Time Last Seen (hs_analytics_last_timestamp)
-            ⤷ The last time and date a contact has viewed a page on your website.
+            ⤷ Time last seen across all contacts associated with this company or organization
         • Time of First Session (hs_analytics_first_visit_timestamp)
-            ⤷ The first time a contact visited your website. This is automatically set by HubSpot for each contact.
+            ⤷ Time of first session across all contacts associated with this company or organization
         • Time of Last Session (hs_analytics_last_visit_timestamp)
-            ⤷ The last time and date a contact visited your website.
+            ⤷ Time of the last session attributed to any contacts that are associated with this company record.
     • marketing_segmentation
         • Fit score (Target Accounts) (fit_score)
         • Fit score threshold Target Accounts (fit_score_threshold)
@@ -1939,14 +1928,14 @@ Company
             ◦ Yes (true)
             ◦ No (false)
         • Days to Close (days_to_close)
-            ⤷ The days that elapsed from when a contact was created until they closed as a customer. This is set automatically by HubSpot and can be used for segmentation and reporting.
+            ⤷ The number of days between when the company record was created and when they closed as a customer.
         • HubSpot Team (hubspot_team_id)
-            ⤷ The team of the owner of a contact.
+            ⤷ The team of the owner of the company.
         • Key Account (Manual) (key_account)
             ◦ Yes (true)
             ◦ No (false)
         • Likelihood to close (hs_predictivecontactscore_v2)
-            ⤷ The probability that a contact will become a customer within the next 90 days. This score is based on standard contact properties and behavior.
+            ⤷ The highest probability that a contact associated with this company will become a customer within the next 90 days. This score is based on standard contact properties and behavior.
         • Marketing Budget for Ads (marketing_budget)
             ◦ $0 - $50k
             ◦ $50 - $100k ($50-$100k)
@@ -1972,7 +1961,6 @@ Company
             ◦ Need better donor engagement tools
             ◦ Want to reach a younger/global audience
         • Referral Name (referral_name)
-            ⤷ Name of the person/agency/partnership that referred us to this contact.
         • Sales - Value Plays (sales___value_plays)
             ⤷ What value plays have I ran?
             ◦ Standard Gift
@@ -2005,9 +1993,9 @@ Company
             ◦ Ads [HIDDEN]
             ◦ unknown [HIDDEN]
         • Shared teams (hs_shared_team_ids)
-            ⤷ Additional teams whose users can access the Deal based on their permissions. This can be set manually or through Workflows or APIs.
+            ⤷ Additional teams whose users can access the Company based on their permissions. This can be set manually or through Workflows or APIs.
         • Shared users (hs_shared_user_ids)
-            ⤷ Additional users that can access the Deal based on their permissions. This can be set manually or through Workflows and APIs.
+            ⤷ Additional users that can access the Company based on their permissions. This can be set manually or through Workflows and APIs.
         • Timing (AI) (timing__ai_)
             ⤷ BANT category - data from Avoma's AI
     • sync_from_associations
@@ -2019,7 +2007,6 @@ Company
             ◦ Meeting (MEETING_EVENT)
             ◦ Task (TASK)
         • Leader Name (from associated leader) (associated_leader_name)
-            ⤷ This property is synchronized with the Name field of the most recent Leader associated with this deal. The Associated Leader Name property ensures a Leader is tied to this negotiation if this involves a current leader. To populate this property, the deal’s owner must associate a Leader with the deal.
     • targetaccountsinformation
         • Target Account (hs_is_target_account)
             ⤷ The Target Account property identifies the companies that you are marketing and selling to as part of your account-based strategy.
@@ -2077,7 +2064,7 @@ Deal
         • Created by user ID (hs_created_by_user_id)
             ⤷ The user who created this record. This value is set automatically by HubSpot.
         • Days to close (days_to_close)
-            ⤷ The days that elapsed from when a contact was created until they closed as a customer. This is set automatically by HubSpot and can be used for segmentation and reporting.
+            ⤷ The number of days the deal took to close
         • Deal Score (hs_deal_score)
             ⤷ The predictive deal score calculated by Hubspot AI to score the deal health
         • Deal Tags (hs_tag_ids)
@@ -2096,7 +2083,7 @@ Deal
         • Forecast probability (hs_forecast_probability)
             ⤷ The custom percent probability a deal will close.
         • HubSpot Team (hubspot_team_id)
-            ⤷ The team of the owner of a contact.
+            ⤷ The team of the owner of the deal.
         • Pray Source (pray_source)
             ◦ Conference
             ◦ Referral
@@ -2192,7 +2179,7 @@ Deal
             ⤷ The total time in seconds spent by the deal in the 'Qualifying & Discovery' stage, 'Ads and Other' pipeline since it last entered this stage
     • analyticsinformation
         • Campaign of last booking in meetings tool (engagements_last_meeting_booked_campaign)
-            ⤷ This UTM parameter shows which marketing campaign (e.g. a specific email) referred the contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
+            ⤷ This UTM parameter shows which marketing campaign (e.g. a specific email) referred an associated contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
         • Channel Attribution (channel_attribution)
             ⤷ A workflow populates this drop-down property on deals based on their Marketing Attribution value, assigning Marketing or Sales channels accordingly.
             ◦ Marketing
@@ -2289,7 +2276,7 @@ Deal
             ◦ PRAYStudio PLG Ad
             ◦ No Data
         • Marketing Attribution (first_touch_marketing_attribution)
-            ⤷ A workflow populates this drop-down property. The workflow updates marketing attribution based on a contact’s first conversion, setting values for organic forms, paid forms, event attendance, or outbound contacts.
+            ⤷ Outlines the initial conversion type from the related contact. A workflow populates this drop-down deal property to assign marketing and channel attribution based on associated form submissions, event registrations, or offline sources when attribution is not set.
             ◦ Digital Outreach (Organic BOFU Form)
             ◦ Live Events (Event Attendance)
             ◦ Outbound
@@ -2355,9 +2342,9 @@ Deal
             ◦ Website Organic - Referrals (Organic - Referrals)
             ◦ Website Organic - Social (Organic - Organic Social)
         • Medium of last booking in meetings tool (engagements_last_meeting_booked_medium)
-            ⤷ This UTM parameter shows which channel (e.g. email) referred the contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
+            ⤷ This UTM parameter shows which channel (e.g. email) referred an associated contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
         • Original Traffic Source (hs_analytics_source)
-            ⤷ First known source the contact used to find your website. Set automatically, but may be updated manually.
+            ⤷ Original source for the contact with the earliest activity for this deal.
             ◦ Organic Search (ORGANIC_SEARCH)
             ◦ Paid Search (PAID_SEARCH)
             ◦ Email Marketing (EMAIL_MARKETING)
@@ -2369,9 +2356,9 @@ Deal
             ◦ Paid Social (PAID_SOCIAL)
             ◦ AI Referrals (AI_REFERRALS)
         • Original Traffic Source Drill-Down 1 (hs_analytics_source_data_1)
-            ⤷ Additional information about the source through which a contact first found your website. This property is automatically set by HubSpot.
+            ⤷ Additional information about the original source for the associated contact, or associated company if there is no contact, with the oldest value for the Time first seen property.
         • Original Traffic Source Drill-Down 2 (hs_analytics_source_data_2)
-            ⤷ Additional information about the source through which a contact first found your website. This property is automatically set by HubSpot.
+            ⤷ Additional information about the original source for the associated contact, or associated company if there is no contact, with the oldest value for the Time first seen property.
         • Record source (hs_object_source_label)
             ⤷ How this record was created.
         • Record source detail 1 (hs_object_source_detail_1)
@@ -2381,7 +2368,7 @@ Deal
         • Record source detail 3 (hs_object_source_detail_3)
             ⤷ Third level of detail on how this record was created.
         • Source of last booking in meetings tool (engagements_last_meeting_booked_source)
-            ⤷ This UTM parameter shows which site (e.g. Twitter) referred the contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
+            ⤷ This UTM parameter shows which site (e.g. Twitter) referred an associated contact to the meetings tool for their most recent booking. This property is only populated when you add tracking parameters to your meeting link.
     • associations_
         • Associated Company Domain (associated_primary_company_domain)
         • Associated Company Record ID (primary_company_record_d)
@@ -2508,9 +2495,9 @@ Deal
             ◦ 🛑 Limited Customization or Flexibility (Limited Customization or Flexibility)
     • core_information
         • Close Date (closedate)
-            ⤷ The date that a contact became a customer. This property is set automatically by HubSpot when a deal or opportunity is marked as closed-won. It can also be set manually or programmatically.
+            ⤷ The expected close date of the deal
         • Create Date (createdate)
-            ⤷ The date that a contact entered the system
+            ⤷ The date the deal was created. This property is set automatically by HubSpot.
         • Deal Collaborator (hs_all_collaborator_owner_ids)
             ⤷ Owner ids of the users involved in closing the deal
         • Deal Description (description)
@@ -2542,7 +2529,7 @@ Deal
             ◦ Ads
             ◦ PLG
         • Deal owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
+            ⤷ The owner of the deal
         • Owner assigned date (hubspot_owner_assigneddate)
             ⤷ The most recent timestamp of when an owner was assigned to this record. This value is set automatically by HubSpot.
         • Pipeline (pipeline)
@@ -2555,7 +2542,6 @@ Deal
         • Time Between Contact First Conversion and Deal Creation (time_between_contact_first_conversion_and_deal_creation)
     • dealscripted
         • ARR Change (arr_change)
-            ⤷ ARR - Previous ARR
         • Average Deal Owner Duration In Current Stage (hs_average_deal_owner_duration_in_current_stage)
             ⤷ Time duration of the calculated average time of closed-won deals spent in current pipeline stage
         • HubSpot Weighted arr_change_ (hs_weighted_arr_change__tdwsmx)
@@ -2604,7 +2590,7 @@ Deal
             ◦ True (true)
             ◦ False (false)
         • Merged Deal IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
+            ⤷ The list of Deal record IDs that have been merged into this Deal. This value is set automatically by HubSpot.
     • key_fields
         • Deal Name (dealname)
             ⤷ The name given to this deal.
@@ -2614,7 +2600,6 @@ Deal
             ⤷ The unique ID for this record. This value is set automatically by HubSpot.
     • leader_information
         •  Long Term Goal (long_term_goal)
-            ⤷ A workflow copies that information when the first closed deal is won.
         • Auto-Renewal (auto_renewal)
             ⤷ Auto-renewal indicates whether a deal (typically a subscription or contract) will automatically renew at the end of its term without requiring manual intervention or re-signing. This is represented as a binary option (e.g., "Yes" or "No") or with specific renewal terms. Standard terms default to “Yes.” If “No” is negotiated, it is manually changed by a sales or customer success representative when the deal is created or updated.
             ◦ Yes
@@ -2632,7 +2617,6 @@ Deal
             ◦ Every four years (per_four_years)
             ◦ Every five years (per_five_years)
         • Billing Start Date (billing_start_date)
-            ⤷ The date when billing begins for the deal.
         • Closed Won Reason (closed_won_reason)
             ⤷ Reason why this deal was won
         • Company Segment (saas_segment)
@@ -2671,7 +2655,6 @@ Deal
             ◦ Advanced Payment
             ◦ Due on Receipt
         • Service End Date (service_end_date)
-            ⤷ The date when the last contracted service should end. This synchronizing property retrieves the Service End Date value from the deal associated with this leader, identified as “Active.” HubSpot automatically calculates this value based on the line items included in the deal.
         • Short Term Goal (short_term_goal)
         • 🗣️ Leader Webiste (leader_domain)
             ⤷ The official website of the organization associated with the name displayed on the PRAY APP. If the artist type is a Person, this website might be separate from the parent company’s site responsible for the purchase. - If a Leader is linked to the deal, a workflow will copy that information from the Leader. - Suppose there is no Leader associated with this deal. In that case, the operator can input the leader’s domain, allowing HubSpot to trigger a workflow that creates the necessary associations and establishes a new leader if one does not already exist.
@@ -2679,7 +2662,7 @@ Deal
         • Actual duration (hs_actual_duration)
             ⤷ Calculates the time between the create date and close date. If the create date occurs after the close date, the value returned is 0.
         • Date of last meeting booked in meetings tool (engagements_last_meeting_booked)
-            ⤷ The date of the last meeting that has been scheduled by a contact through the meetings tool. If multiple meetings have been scheduled, the date of the last chronological meeting in the timeline is shown.
+            ⤷ The date of the most recent meeting an associated contact has booked through the meetings tool.
         • Description of first engagement - from associated contact (description_of_first_engagement___from_associated_contact)
             ◦ (EMPTY_DESCRIPTION)
             ◦ Bounced (BOUNCED)
@@ -2707,9 +2690,9 @@ Deal
             ◦ Missed (MISSED)
             ◦ On Hold (HOLD)
         • Last Activity Date (notes_last_updated)
-            ⤷ The last time a note, call, email, meeting, or task was logged for a contact. This is set automatically by HubSpot based on user actions in the contact record.
+            ⤷ The last time a note, call, email, meeting, or task was logged for a deal. This is set automatically by HubSpot based on user actions in the deal record.
         • Last Contacted (notes_last_contacted)
-            ⤷ The last time a call, email, or meeting was logged for a contact. This is set automatically by HubSpot based on user actions in the contact record.
+            ⤷ The last time a call, sales email, or meeting was logged for this deal. This is set automatically by HubSpot based on user actions.
         • Last GS Shared Message (hs_last_gs_shared_message)
             ⤷ when was the last gs shared message?
         • Last Modified Date (hs_lastmodifieddate)
@@ -2721,7 +2704,7 @@ Deal
         • Latest Approval Status (hs_latest_approval_status)
             ⤷ The latest approval status. Used by HubSpot to track pipeline approval processes.
         • Next Activity Date (notes_next_activity_date)
-            ⤷ The date of the next upcoming activity for a contact. This is set automatically by HubSpot based on user actions in the contact record.
+            ⤷ The date of the next upcoming activity for a deal. This property is set automatically by HubSpot based on user action. This includes logging a future call, sales email, or meeting using the Log feature, as well as creating a future task or scheduling a future meeting. This is updated automatically by HubSpot.
         • Next Meeting (hs_next_meeting_id)
         • Next Meeting Name (hs_next_meeting_name)
         • Next Meeting Start Time (hs_next_meeting_start_time)
@@ -2732,9 +2715,9 @@ Deal
         • Number of Associated Line Items (hs_num_of_associated_line_items)
             ⤷ The number of line items associated with this deal
         • Number of Sales Activities (num_notes)
-            ⤷ The number of sales activities for a contact. This is set automatically by HubSpot based on user actions in the contact record.
+            ⤷ The total number of sales activities (notes, calls, emails, meetings, or tasks) logged for a deal. This is updated automatically by HubSpot.
         • Number of times contacted (num_contacted_notes)
-            ⤷ The number of times a call, email, or meeting was logged for a contact. This is set automatically by HubSpot based on user actions in the contact record.
+            ⤷ The number of times a call, email or meeting was logged for this deal
     • plg
         • Calculated Subscription End Date (calculated_subscription_end_date)
         • PLG Status (plg_status)
@@ -2764,7 +2747,7 @@ Deal
             ◦ No (false)
         • Calculated Days to Close (calculated_days_to_close)
         • City (city)
-            ⤷ A contact's city of residence
+            ⤷ city
         • Conference Attendance (event_name)
             ◦ A.R Bernard Golf Tournament
             ◦ BCI
@@ -2816,7 +2799,6 @@ Deal
         • Deal Factors (deal_factors)
         • Deal Score (deal_score)
         • Denomination (denomination)
-            ⤷ Denomination if a religious org
             ◦ Assemblies of God
             ◦ Baptist
             ◦ Catholic
@@ -2833,7 +2815,7 @@ Deal
             ◦ Yes (true)
             ◦ No (false)
         • Email (email)
-            ⤷ A contact's email address
+            ⤷ Email
         • First Right of Renewal for Next Podcast (first_right_of_renewal_for_next_podcast)
             ◦ Yes (true)
             ◦ No (false)
@@ -2875,7 +2857,7 @@ Deal
         • No Fee (no_fee)
             ⤷ Mentioned or signed up for no fee's for giving
         • Notes (notes)
-            ⤷ Note Body
+            ⤷ Notes Body
         • Outstanding Balance (outsanding_balance)
             ◦ Yes (true)
             ◦ No (false)
@@ -2921,7 +2903,6 @@ Deal
             ◦ Patrick Duggan
         • Sales Owner (sales_owner)
         • Segmentation (segmentation)
-            ⤷ The property where the team can enter manual segment adjustments when the AI data is inaccurate or needs tweaking.
             ◦ Whale/Elephant
             ◦ Deer
             ◦ Other
@@ -2929,12 +2910,11 @@ Deal
             ◦ Healthcare
             ◦ Mission
         • Service Start Date (service_start_date)
-            ⤷ When the service starts for the deal or line item (product).
         • Source (source)
             ⤷ How did this contact hear about pray.com
         • Source Detail (source_detail)
         • State (state)
-            ⤷ The contact's state of residence. This might be set via import, form, or integration.
+            ⤷ State of church
         • Timing (timing)
             ⤷ How soon do they want to start moving their digital media to Pray.com?
             ◦ 0-30 Days
@@ -2942,7 +2922,7 @@ Deal
             ◦ 3-6 Months
             ◦ 6+ Months
         • Website  (website)
-            ⤷ The contact's company website
+            ⤷ Website
         • Zip Code  (zip_code)
             ⤷ Zip Code
         • phone number (phone_number)
@@ -3042,7 +3022,6 @@ Lead
         • Contact Number of Pageviews (hs_contact_num_webpage_views)
         • Contact Time of Last Session (hs_contact_last_webpage_visit_timestamp)
         • Created by user ID (hs_created_by_user_id)
-            ⤷ The user who created this record. This value is set automatically by HubSpot.
         • Disqualification Reason (hs_lead_disqualification_reason)
             ◦ Bad Timing (BAD_TIMING)
             ◦ Budget Constraints (BUDGET_CONSTRAINTS)
@@ -3058,7 +3037,6 @@ Lead
         • Email Count (hs_lead_email_count)
         • First Outreach Date (hs_lead_first_outreach_date)
         • HubSpot Team (hubspot_team_id)
-            ⤷ The team of the owner of a contact.
         • Inbound Lead Marketing Qualification (inbound_lead_marketing_qualification)
             ◦ 🔥MOMENTUM (MOMENTUM)
             ◦ 🔴 HOT (HOT)
@@ -3087,9 +3065,7 @@ Lead
         • Lead Name (hs_lead_name)
         • Lead Number of Pageviews (hs_num_webpage_views)
         • Lead Owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
         • Lead Pipeline (hs_pipeline)
-            ⤷ The pipeline of this Leader
         • Lead Source (hs_lead_source)
             ◦ Organic Search (ORGANIC_SEARCH)
             ◦ Paid Search (PAID_SEARCH)
@@ -3112,12 +3088,9 @@ Lead
             ◦ Ads & Others
         • Lead flow id (hs_lead_flow_id)
         • Lead stage (hs_pipeline_stage)
-            ⤷ The pipeline stage of this Leader
         • Lead tags (hs_tag_ids)
-            ⤷ List of tag ids applicable to a deal. This property is set automatically by HubSpot.
         • Meeting Count (hs_lead_meeting_count)
         • Merged record IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
         • Message Thread Count (hs_lead_communication_count)
         • Newest associated meeting date (newest_associated_meeting_date)
         • Next Activity Date (hs_next_activity_date)
@@ -3136,14 +3109,11 @@ Lead
             ◦ Task (TASK)
             ◦ WhatsApp (WHATS_APP)
         • Object create date/time (hs_createdate)
-            ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • Object last modified date/time (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
         • Open deal amount (hs_lead_pipeline_value)
         • Open leads (hs_lead_is_open)
         • Outreach activity count (hs_lead_outreach_activity_count)
         • Owner assigned date (hubspot_owner_assigneddate)
-            ⤷ The most recent timestamp of when an owner was assigned to this record. This value is set automatically by HubSpot.
         • Pipeline stage category (hs_pipeline_stage_category_v2)
             ◦ Not started (NEW) [READ-ONLY]
             ◦ In progress (IN_PROGRESS) [READ-ONLY]
@@ -3157,21 +3127,15 @@ Lead
             ◦ Yes (true)
             ◦ No (false)
         • Record ID (hs_object_id)
-            ⤷ The unique ID for this record. This value is set automatically by HubSpot.
         • Record source (hs_object_source_label)
-            ⤷ How this record was created.
         • Record source detail 1 (hs_object_source_detail_1)
-            ⤷ First level of detail on how this record was created.
         • Record source detail 2 (hs_object_source_detail_2)
-            ⤷ Second level of detail on how this record was created.
         • Record source detail 3 (hs_object_source_detail_3)
-            ⤷ Third level of detail on how this record was created.
         • SalesCo Lead (salesco_lead)
             ◦ Yes (true)
             ◦ No (false)
         • Time to First Touch (hs_lead_time_to_first_outreach)
         • Updated by user ID (hs_updated_by_user_id)
-            ⤷ The user who last updated this record. This value is set automatically by HubSpot.
         • 🔍 Lead handoff note (lead_handoff_note)
     • leadstages
         • Cumulative time in "stage”
@@ -3281,20 +3245,20 @@ Leader (Custom Object)
         • 👶 Child Company Website Domain (child_company_website_domain)
             ⤷ This domain represents the Child Company linked to the leader, indicating that multiple companies were involved in the leader’s negotiation, but it is neither the leading company nor an agency. This property is linked to the website domain field of the most recent company connected to this leader with the “👶 Child” label. This ensures that the leader has a Child company associated with them if one exists. To complete this property, the leader’s owner must associate at least one company with the “👶 Child” label.
         • 💳 Billing Contact Email (billing_contact_email)
-            ⤷ This property indicates whether there is any Billing Contact associated with the deal. If a contact linked to the deal has the “Billing Contact” label, a workflow will copy that information from this contact to the deal property. Suppose there is no Billing Contact associated with this deal. In that case, the operator can input the Billing Contact Email, allowing HubSpot to trigger a workflow that will create the necessary associations and establish a new contact if there isn’t one. PS: The email must have a username, an ‘@’ symbol, and a domain. The username can include letters, numbers, and special characters. The domain must have a name and a valid extension.
+            ⤷ It’s the email of the 💳 Billing Contact associated with this leader. This property is synchronized with the Email field of the most recent CONTACT associated with this Leader, which has the “💳 Billing Contact” label. This property ensures that this Leader has the Billing Contact associated with it. To fill this property, the Leader’s owner must associate at least one CONTACT with the “💳 Billing Contact” label.
         • 🔑 Key Manager Email (key_manager_email)
-            ⤷ This property indicates whether there is any Key Manager associated with the deal. If a contact linked to the deal has the “Key Manager” label, a workflow will copy that information from this contact to the deal property. Suppose there is no Key Manager associated with this deal. In that case, the operator can input the Key Manager Email, allowing HubSpot to trigger a workflow that will create the necessary associations and establish a new contact if there isn’t one. PS: The email must have a username, an ‘@’ symbol, and a domain. The username can include letters, numbers, and special characters. The domain must have a name and a valid extension.
+            ⤷ It’s the email of the Key Manager contact associated with this leader. This property is synchronized with the Email field of the most recent CONTACT associated with this Leader, which has the “🔑 Key Manager” label. This property ensures that this Leader has the Key Manager associated with it. To fill this property, the Leader’s owner must associate at least one CONTACT with the “🔑 Key Manager” label.
     • core_info
         • Customer Success Manager (CSM) (customer_success_manager__csm_)
             ⤷ It’s the Customer Success Manager (CSM) who is responsible for ensuring the success of this customer.
         • Leader PRAY.COM URL (leader_pray_com_url)
             ⤷ It is the leader URL on PRAY.COM. This property is essential for linking the customer to their product usage history.
         • Owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
+            ⤷ The owner of the object.
         • Owner assigned date (hubspot_owner_assigneddate)
             ⤷ The most recent timestamp of when an owner was assigned to this record. This value is set automatically by HubSpot.
         • Owner's main team (hubspot_team_id)
-            ⤷ The team of the owner of a contact.
+            ⤷ The main team of the record owner. This value is set automatically by HubSpot.
     • discontinued
         • AI Org Classification Category (Sync from parent company) (ai_org_classification_category__sync_from_parent_company_)
         • ARR (Sync Active Deal) (annual_recurring_revenue__arr_)
@@ -3311,7 +3275,7 @@ Leader (Custom Object)
         • Cancellation Date (Sync Active Deal) (churn_date)
             ⤷ The cancellation date is the date the leader permanently canceled the contract. If the leader is still a customer, it will be blank. Can be manually set or a workflow snapshot of the information from the most recent closed-lost deal when it’s from a churn pipeline.
         • Cancellation Reason (Sync Active Deal) (churn_reason)
-            ⤷ The churn reason explains why the leader permanently canceled the contract. It will be blank if the leader is still a customer.
+            ⤷ The reason for the cancellation explains why the leader permanently canceled the contract. If the leader is still a customer, it will be blank. This synchronizing property retrieves the Cancellation Reason value from the deal associated with this leader, labeled as “Active.” The AE manually set this value when closing the most recent deal with the leader.
             ◦ 🧩 Product-Related (Product-Related)
             ◦ 💰 Pricing & Budget (Pricing & Budget)
             ◦ 📞 Support & Service (Support & Service)
@@ -3362,7 +3326,6 @@ Leader (Custom Object)
         • Service End Date (Sync Active Deal) (service_end_date)
             ⤷ The date when the last contracted service should end. This synchronizing property retrieves the Service End Date value from the deal associated with this leader, identified as “Active.” HubSpot automatically calculates this value based on the line items included in the deal.
         • Service Start Date (Sync Active Deal) (service_start_date)
-            ⤷ When the service starts for the deal or line item (product).
         • Specific Cancellation Reason (Sync Active Deal) (specific_churn_reason__dependent_dropdown_)
             ⤷ The specific reason for cancellation explains why the leader permanently canceled the contract. If the leader is still a customer, it will be blank. A workflow will copy and retrieve the Specific Conditional Cancellation Reason value from the deal associated with this leader, labeled “Active.” The AE manually set this value when closing the most recent deal with the leader.
         • State Location (state_location)
@@ -3423,9 +3386,9 @@ Leader (Custom Object)
             ⤷ The Record ID of the most recently created deal associated with this leader. This property is synchronized with the Record ID field of the Most recently created DEAL associated with this Leader.
     • key_fiels
         • Leader Name (App Display Name) (leader_name)
-            ⤷ The name of the leader as it should appear on the PRAY APP. If a Leader is linked to the deal, a workflow will copy that information from the Leader. - Suppose there is no Leader associated with this deal. In that case, the operator can input the leader’s name, allowing HubSpot to trigger a workflow that creates the necessary associations and establishes a new leader if one does not already exist.
+            ⤷ The leader's name as it should appear on the PRAY APP.
         • Leader Website (leader_domain)
-            ⤷ The official website of the organization associated with the name displayed on the PRAY APP. If the artist type is a Person, this website might be separate from the parent company’s site responsible for the purchase. - If a Leader is linked to the deal, a workflow will copy that information from the Leader. - Suppose there is no Leader associated with this deal. In that case, the operator can input the leader’s domain, allowing HubSpot to trigger a workflow that creates the necessary associations and establishes a new leader if one does not already exist.
+            ⤷ The official website of the organization associated with the name displayed on the PRAY APP. If the artist type is a Person, this website might be separate from the parent company's site responsible for the purchase.
         • Ministry Name (ministry_name)
             ⤷ Since the leader and ministry names can vary, this field is designated to set both names.
     • leader_assets
@@ -3528,7 +3491,7 @@ Leader (Custom Object)
             ◦ No (false)
     • objecttags
         • Object Tags (hs_tag_ids)
-            ⤷ List of tag ids applicable to a deal. This property is set automatically by HubSpot.
+            ⤷ List of tag ids applicable to the object. This property is set automatically by HubSpot.
     • plg
         • Plan Name (PLG - Sync from contact) (plan_name)
         • Subscription End Date  (PLG - Sync from contact) (subscription_end_date)
@@ -3561,7 +3524,7 @@ Leader (Custom Object)
         • SuperFunnel target launch date (superfunnel_target_launch_date)
     • ✅_first_closed-won
         • Closed Won Reason (closed_won_reason)
-            ⤷ Reason why this deal was won
+            ⤷ The reason the customer signed their first contract with us. A workflow copies that information when the first closed deal is won.
         • First Closed-Won ARR  (Sync First Deal) (first_closed_won_arr)
             ⤷ The Annual Recurring Revenue Value from the first closed-won deal. This synchronizing property retrieves the Annual Recurring Revenue Value from the deal associated with this leader, identified as “First Closed-Won.” HubSpot automatically calculates this value based on the line items included in the deal.
         • First closed won deal name (first_closed_won_deal_name)
@@ -3588,12 +3551,9 @@ Leader (Custom Object)
         • #3 Studio Tour (n3_studio_tour)
     • 📌shipping_address
         • City (city)
-            ⤷ A contact's city of residence
         • State (state)
-            ⤷ The contact's state of residence. This might be set via import, form, or integration.
         • Street Address (street_address)
         • Zip Code (zip_code)
-            ⤷ Zip Code
     • 📍account_mapping
         • CFO (cfo)
         • COO / XP (coo___xp)
@@ -3624,11 +3584,11 @@ Leader (Custom Object)
         • Leader pipeline (hs_pipeline)
             ⤷ The pipeline of this Leader
         • Merged record IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
+            ⤷ The list of record IDs that have been merged into this record. This value is set automatically by HubSpot.
         • Object create date/time (hs_createdate)
             ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • Object last modified date/time (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
+            ⤷ Most recent timestamp of any property update for this object. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
         • Record ID (hs_object_id)
             ⤷ The unique ID for this record. This value is set automatically by HubSpot.
         • Record source (hs_object_source_label)
@@ -3640,9 +3600,9 @@ Leader (Custom Object)
         • Record source detail 3 (hs_object_source_detail_3)
             ⤷ Third level of detail on how this record was created.
         • Shared teams (hs_shared_team_ids)
-            ⤷ Additional teams whose users can access the Deal based on their permissions. This can be set manually or through Workflows or APIs.
+            ⤷ Additional teams whose users can access the record based on their permissions. This can be set manually or through Workflows or APIs.
         • Shared users (hs_shared_user_ids)
-            ⤷ Additional users that can access the Deal based on their permissions. This can be set manually or through Workflows and APIs.
+            ⤷ Additional users that can access the record based on their permissions. This can be set manually or through Workflows and APIs.
         • Updated by user ID (hs_updated_by_user_id)
             ⤷ The user who last updated this record. This value is set automatically by HubSpot.
 
@@ -3708,31 +3668,22 @@ Call
             ◦ Paid Social (PAID_SOCIAL)
             ◦ AI Referrals (AI_REFERRALS)
         • Created by user ID (hs_created_by_user_id)
-            ⤷ The user who created this record. This value is set automatically by HubSpot.
         • In-person Event Encounter (in_person_event_encounter)
             ◦ NRB
             ◦ Other
         • Merged record IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
         • Record ID (hs_object_id)
-            ⤷ The unique ID for this record. This value is set automatically by HubSpot.
         • Record source (hs_object_source_label)
-            ⤷ How this record was created.
         • Record source detail 1 (hs_object_source_detail_1)
-            ⤷ First level of detail on how this record was created.
         • Record source detail 2 (hs_object_source_detail_2)
-            ⤷ Second level of detail on how this record was created.
         • Record source detail 3 (hs_object_source_detail_3)
-            ⤷ Third level of detail on how this record was created.
         • Talking Points (talking_points)
             ◦ America Prays 250
             ◦ NRB 2026
             ◦ PRAY Science (Pray Science)
         • Updated by user ID (hs_updated_by_user_id)
-            ⤷ The user who last updated this record. This value is set automatically by HubSpot.
     • engagement
         • Activity assigned to (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
         • Activity created by (hs_created_by)
         • Activity date (hs_timestamp)
         • Attached file IDs (hs_attachment_ids)
@@ -3754,17 +3705,13 @@ Call
             ◦ Sales - In-Person
             ◦ MP - Speaking Engagement
         • Create date (hs_createdate)
-            ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • HubSpot Team (hubspot_team_id)
-            ⤷ The team of the owner of a contact.
         • Last modified date (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
 
 Meeting
 
     • engagement
         • Activity assigned to (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
         • Activity created by (hs_created_by)
         • Activity date (hs_timestamp)
         • Attached file IDs (hs_attachment_ids)
@@ -3786,11 +3733,8 @@ Meeting
             ◦ Sales - In-Person
             ◦ MP - Speaking Engagement
         • Create date (hs_createdate)
-            ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • HubSpot Team (hubspot_team_id)
-            ⤷ The team of the owner of a contact.
         • Last modified date (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
         • Talking points (talking_points)
             ◦ America Prays 250
             ◦ NRB 2026
@@ -3859,22 +3803,14 @@ Meeting
             ◦ Paid Social (PAID_SOCIAL)
             ◦ AI Referrals (AI_REFERRALS)
         • Created by user ID (hs_created_by_user_id)
-            ⤷ The user who created this record. This value is set automatically by HubSpot.
         • Meeting Duration (meeting_duration)
         • Merged record IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
         • Record ID (hs_object_id)
-            ⤷ The unique ID for this record. This value is set automatically by HubSpot.
         • Record source (hs_object_source_label)
-            ⤷ How this record was created.
         • Record source detail 1 (hs_object_source_detail_1)
-            ⤷ First level of detail on how this record was created.
         • Record source detail 2 (hs_object_source_detail_2)
-            ⤷ Second level of detail on how this record was created.
         • Record source detail 3 (hs_object_source_detail_3)
-            ⤷ Third level of detail on how this record was created.
         • Updated by user ID (hs_updated_by_user_id)
-            ⤷ The user who last updated this record. This value is set automatically by HubSpot.
 
 Campaign
 
@@ -3928,7 +3864,6 @@ Campaign
             ◦ Completed (completed)
         • Confluence Page (confluence_page)
         • Created by user ID (hs_created_by_user_id)
-            ⤷ The user who created this record. This value is set automatically by HubSpot.
         • Created on (hs_created_at)
         • Folder (folder)
         • Initiative Channel (initiative_channel)
@@ -3958,25 +3893,17 @@ Campaign
         • Launch Date End (launch_date_end)
         • Location (location)
         • Merged record IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
         • Owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
         • Owner assigned date (hubspot_owner_assigneddate)
-            ⤷ The most recent timestamp of when an owner was assigned to this record. This value is set automatically by HubSpot.
         • Record source (hs_object_source_label)
-            ⤷ How this record was created.
         • Record source detail 1 (hs_object_source_detail_1)
-            ⤷ First level of detail on how this record was created.
         • Record source detail 2 (hs_object_source_detail_2)
-            ⤷ Second level of detail on how this record was created.
         • Record source detail 3 (hs_object_source_detail_3)
-            ⤷ Third level of detail on how this record was created.
         • Talking points (talking_points)
             ◦ America Prays 250
             ◦ NRB 2026
             ◦ PRAY Science (Pray Science)
         • Updated by user ID (hs_updated_by_user_id)
-            ⤷ The user who last updated this record. This value is set automatically by HubSpot.
 
 Marketing Event
 
@@ -3985,7 +3912,6 @@ Marketing Event
         • Attendees (hs_attendees)
         • Cancellations (hs_cancellations)
         • Created by user ID (hs_created_by_user_id)
-            ⤷ The user who created this record. This value is set automatically by HubSpot.
         • Description (hs_event_description)
         • End date (hs_end_datetime)
         • Event Format (event_type)
@@ -4011,23 +3937,15 @@ Marketing Event
         • Name (hs_event_name)
         • No shows (hs_noshows)
         • Object create date/time (hs_createdate)
-            ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • Object last modified date/time (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
         • Organizer (hs_event_organizer)
         • Owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
         • PRAY team attendees (pray_team_attendees)
         • Record ID (hs_object_id)
-            ⤷ The unique ID for this record. This value is set automatically by HubSpot.
         • Record source (hs_object_source_label)
-            ⤷ How this record was created.
         • Record source detail 1 (hs_object_source_detail_1)
-            ⤷ First level of detail on how this record was created.
         • Record source detail 2 (hs_object_source_detail_2)
-            ⤷ Second level of detail on how this record was created.
         • Record source detail 3 (hs_object_source_detail_3)
-            ⤷ Third level of detail on how this record was created.
         • Registrations (hs_registrations)
         • Start date (hs_start_datetime)
         • Talking Points (talking_points)
@@ -4035,7 +3953,6 @@ Marketing Event
             ◦ NRB 2026
             ◦ PRAY Science (Pray Science)
         • Updated by user ID (hs_updated_by_user_id)
-            ⤷ The user who last updated this record. This value is set automatically by HubSpot.
         • Url (hs_event_url)
     • projected_roi
         • Projected ROI (projected_roi)
@@ -4043,7 +3960,6 @@ Marketing Event
     • roi_&_revenue_attribution
         • Amount Spent (spent)
         • Budget (budget)
-            ⤷ What is the total Budget for the Church?
         • Deals Closed-won Amount (net_new_revenue)
         • Deals Lost Amount (deals_lost_amount)
         • Deals Open Amount (open_deals_amount)
@@ -4174,7 +4090,6 @@ Marketing Email
             ◦ Email generation (EMAIL_GENERATOR)
         • Created by user (hs_marketing_email_created_by_id)
         • Created by user ID (hs_created_by_user_id)
-            ⤷ The user who created this record. This value is set automatically by HubSpot.
         • Created date (hs_created_at)
         • Email name (hs_name)
         • Email state (hs_state)
@@ -4296,15 +4211,10 @@ Marketing Email
             ◦ Manage Preferences Email (manage_preferences_email) [READ-ONLY]
             ◦ Ticket Automated Email (ticket_pipeline_automated)
         • Merged record IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
         • Object create date/time (hs_createdate)
-            ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • Object last modified date/time (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
         • Owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
         • Owner assigned date (hubspot_owner_assigneddate)
-            ⤷ The most recent timestamp of when an owner was assigned to this record. This value is set automatically by HubSpot.
         • Preview key (hs_preview_key)
         • Publish status (hs_publish_status)
             ◦ Draft (DRAFT) [READ-ONLY]
@@ -4315,15 +4225,10 @@ Marketing Email
         • Published by (hs_published_by_name)
         • Published by email (hs_published_by_email)
         • Record ID (hs_object_id)
-            ⤷ The unique ID for this record. This value is set automatically by HubSpot.
         • Record source (hs_object_source_label)
-            ⤷ How this record was created.
         • Record source detail 1 (hs_object_source_detail_1)
-            ⤷ First level of detail on how this record was created.
         • Record source detail 2 (hs_object_source_detail_2)
-            ⤷ Second level of detail on how this record was created.
         • Record source detail 3 (hs_object_source_detail_3)
-            ⤷ Third level of detail on how this record was created.
         • Send frequency (hs_rss_to_email_timing)
         • Subcategory (hs_subcategory)
             ◦ AB Loser Variant (ab_loser_variant)
@@ -4380,7 +4285,6 @@ Marketing Email
             ◦ Yes (true)
             ◦ No (false)
         • Updated by user ID (hs_updated_by_user_id)
-            ⤷ The user who last updated this record. This value is set automatically by HubSpot.
 
 Workflow
 
@@ -4431,9 +4335,7 @@ Workflow
         • Notification Recipients - Teams (hs_team_notification_recipients)
         • Notification Recipients - Users (hs_user_notification_recipients)
         • Object create date/time (hs_createdate)
-            ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • Object last modified date/time (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
         • Object type (hs_object_type_id)
         • On or Off (hs_enabled)
             ◦ True (true)
@@ -4466,15 +4368,10 @@ Workflow
             ◦ Data OPS - Complience
             ◦ Data OPS - CRM Hygiene
         • Record ID (hs_object_id)
-            ⤷ The unique ID for this record. This value is set automatically by HubSpot.
         • Record source (hs_object_source_label)
-            ⤷ How this record was created.
         • Record source detail 1 (hs_object_source_detail_1)
-            ⤷ First level of detail on how this record was created.
         • Record source detail 2 (hs_object_source_detail_2)
-            ⤷ Second level of detail on how this record was created.
         • Record source detail 3 (hs_object_source_detail_3)
-            ⤷ Third level of detail on how this record was created.
         • Total lifetime issue activation count (hs_total_lifetime_issue_activation_count)
         • Trigger Type (hs_enrollment_trigger)
             ◦ -- (NEW)
@@ -4505,7 +4402,7 @@ Product
         • Billing Start Date (billing_start_date)
             ⤷ The date when billing begins for the deal.
         • Service End Date (service_end_date)
-            ⤷ The date when the last contracted service should end. This synchronizing property retrieves the Service End Date value from the deal associated with this leader, identified as “Active.” HubSpot automatically calculates this value based on the line items included in the deal.
+            ⤷ When the service ends for the deal or line item (product). Data Source: Workflow - Calculated as Service Start Date + Term + Billing frequency.
         • Service Start Date (service_start_date)
             ⤷ When the service starts for the deal or line item (product).
     • price
@@ -4521,24 +4418,24 @@ Product
             ⤷ Cost of product
     • product_activity
         • Create Date (createdate)
-            ⤷ The date that a contact entered the system
+            ⤷ The date the line item was created
         • Created by user ID (hs_created_by_user_id)
             ⤷ The user who created this record. This value is set automatically by HubSpot.
         • Image Url (hs_images)
             ⤷ Product images.
         • Last Modified Date (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
+            ⤷ The date any property on this product was modified
         • Object create date/time (hs_createdate)
             ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • URL (hs_url)
             ⤷ Product url.
     • productinformation
         • Merged record IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
+            ⤷ The list of record IDs that have been merged into this record. This value is set automatically by HubSpot.
         • Name (name)
-            ⤷ Name
+            ⤷ Product name
         • Owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
+            ⤷ The owner of the object.
         • Owner assigned date (hubspot_owner_assigneddate)
             ⤷ The most recent timestamp of when an owner was assigned to this record. This value is set automatically by HubSpot.
         • Product Category (product_category)
@@ -4555,7 +4452,7 @@ Product
             ◦ Variant (variant)
             ◦ Bundle (bundle)
         • Product description (description)
-            ⤷ Description of the deal
+            ⤷ Full description of product
         • Product type (hs_product_type)
             ⤷ The type of product. By default, categorize your product as either Inventory, Non-Inventory or Service.
             ◦ Inventory (inventory)
@@ -4611,7 +4508,7 @@ Product
         • Billing Start Date (billing_start_date)
             ⤷ The date when billing begins for the deal.
         • Service End Date (service_end_date)
-            ⤷ The date when the last contracted service should end. This synchronizing property retrieves the Service End Date value from the deal associated with this leader, identified as “Active.” HubSpot automatically calculates this value based on the line items included in the deal.
+            ⤷ When the service ends for the deal or line item (product). Data Source: Workflow - Calculated as Service Start Date + Term + Billing frequency.
         • Service Start Date (service_start_date)
             ⤷ When the service starts for the deal or line item (product).
     • lineiteminformation
@@ -4621,7 +4518,7 @@ Product
             ◦ No (false)
         • Associated Leader (associated_leader)
         • Create date (createdate)
-            ⤷ The date that a contact entered the system
+            ⤷ The date the line item was created
         • Created by user ID (hs_created_by_user_id)
             ⤷ The user who created this record. This value is set automatically by HubSpot.
         • Currency (hs_line_item_currency_code)
@@ -4642,28 +4539,28 @@ Product
             ◦ Ads
             ◦ PLG
         • Description (description)
-            ⤷ Description of the deal
+            ⤷ Full description of product
         • External line item id (hs_external_id)
             ⤷ The ID of a line item
         • Image URL (hs_images)
             ⤷ Product images.
         • Last Modified Date (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
+            ⤷ The date any property on this product was modified
         • Line Item Service Status (line_item_service_status)
             ◦ Active
             ◦ Inactive
         • Merged record IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
+            ⤷ The list of record IDs that have been merged into this record. This value is set automatically by HubSpot.
         • Name (name)
-            ⤷ Name
+            ⤷ Product name
         • Object create date/time (hs_createdate)
             ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • Owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
+            ⤷ The owner of the object.
         • Owner assigned date (hubspot_owner_assigneddate)
             ⤷ The most recent timestamp of when an owner was assigned to this record. This value is set automatically by HubSpot.
         • Owner's main team (hubspot_team_id)
-            ⤷ The team of the owner of a contact.
+            ⤷ The main team of the record owner. This value is set automatically by HubSpot.
         • Product Category (product_category)
             ⤷ A custom field is used to group product SKUs (e.g., "Pray Radio," "Pray TV", “Pray Studio). It simplifies filtering, reporting, and sales analysis by organizing products into meaningful categories.
             ◦ PRAY Radio (Pray Radio)
@@ -4700,11 +4597,11 @@ Product
             ⤷ Variant id of the shopify product
     • price
         • Annual contract value (hs_acv)
-            ⤷ The annual contract value (ACV) of this deal.
+            ⤷ The annual contract value (ACV) of this product
         • Annual contract value margin (hs_margin_acv)
             ⤷ The margin annual contract value of this product
         • Annual recurring revenue (hs_arr)
-            ⤷ The annual recurring revenue (ARR) of this deal.
+            ⤷ The annual recurring revenue (ARR) of this product
         • Annual recurring revenue margin (hs_margin_arr)
             ⤷ The margin annual recurring revenue of this product
         • Billing frequency (recurringbillingfrequency)
@@ -4732,11 +4629,11 @@ Product
         • Margin (hs_margin)
             ⤷ The margin value of this product
         • Monthly recurring revenue (hs_mrr)
-            ⤷ The monthly recurring revenue (MRR) of this deal.
+            ⤷ The monthly recurring revenue (MRR) of this product
         • Monthly recurring revenue margin (hs_margin_mrr)
             ⤷ The margin monthly recurring revenue of this product
         • Net price (amount)
-            ⤷ The total amount of the deal
+            ⤷ The amount of a line item
         • Net price after tax (hs_post_tax_amount)
             ⤷ Amount of line item after applying tax
         • Number of payments (hs_recurring_billing_number_of_payments)
@@ -4758,7 +4655,7 @@ Product
         • Tax rate (hs_tax_rate_group_id)
             ⤷ The tax rate used on this line item
         • Total contract value (hs_tcv)
-            ⤷ The total contract value (TCV) of this deal.
+            ⤷ The total contract value (TCV) of this product
         • Total contract value margin (hs_margin_tcv)
             ⤷ The margin total contract value of this product
         • Unit cost (hs_cost_of_goods_sold)
@@ -4792,46 +4689,30 @@ Project
         • Close date (hs_close_date)
         • Closed Projects Actual Duration (closed_projects_actual_duration)
         • Create date (hs_createdate)
-            ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • Created by user ID (hs_created_by_user_id)
-            ⤷ The user who created this record. This value is set automatically by HubSpot.
         • Description (hs_description)
         • Last Activity Date (hs_last_activity_date)
         • Last modified date (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
         • Merged record IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
         • Name (hs_name)
         • Next Activity Date (hs_next_activity_date)
         • Owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
         • Owner assigned date (hubspot_owner_assigneddate)
-            ⤷ The most recent timestamp of when an owner was assigned to this record. This value is set automatically by HubSpot.
         • Owner's main team (hubspot_team_id)
-            ⤷ The team of the owner of a contact.
         • Pipeline (hs_pipeline)
-            ⤷ The pipeline of this Leader
         • Pipeline Stage (hs_pipeline_stage)
-            ⤷ The pipeline stage of this Leader
         • Priority (hs_priority)
             ◦ Low (low)
             ◦ Medium (medium)
             ◦ High (high)
         • Project Tags (hs_project_tags)
         • Record ID (hs_object_id)
-            ⤷ The unique ID for this record. This value is set automatically by HubSpot.
         • Record source (hs_object_source_label)
-            ⤷ How this record was created.
         • Record source detail 1 (hs_object_source_detail_1)
-            ⤷ First level of detail on how this record was created.
         • Record source detail 2 (hs_object_source_detail_2)
-            ⤷ Second level of detail on how this record was created.
         • Record source detail 3 (hs_object_source_detail_3)
-            ⤷ Third level of detail on how this record was created.
         • Shared teams (hs_shared_team_ids)
-            ⤷ Additional teams whose users can access the Deal based on their permissions. This can be set manually or through Workflows or APIs.
         • Shared users (hs_shared_user_ids)
-            ⤷ Additional users that can access the Deal based on their permissions. This can be set manually or through Workflows and APIs.
         • Start date (hs_start_date)
         • Status (hs_status)
             ◦ On Track (on_track)
@@ -4851,7 +4732,6 @@ Project
             ◦ Sales (sales)
             ◦ Internal Ops (internal_ops)
         • Updated by user ID (hs_updated_by_user_id)
-            ⤷ The user who last updated this record. This value is set automatically by HubSpot.
     • project_stages
         • Cumulative time in "Cancelled (New Leader Onboarding)" (hs_v2_cumulative_time_in_1214470550)
         • Date entered "Cancelled (New Leader Onboarding)" (hs_v2_date_entered_1214470550)
@@ -4872,7 +4752,6 @@ sms
             ◦ Main content (MAIN_CONTENT)
             ◦ Image (IMAGE)
         • Created by user ID (hs_created_by_user_id)
-            ⤷ The user who created this record. This value is set automatically by HubSpot.
         • Delivered (hs_delivered)
         • Delivered rate (hs_delivered_rate)
         • Generated by AI (hs_generated_by_ai)
@@ -4888,20 +4767,14 @@ sms
             ◦ Published Automated (AUTOMATED)
             ◦ Error (ERROR)
         • Merged record IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
         • Not delivered (hs_failed_delivered)
         • Not delivered rate (hs_failed_delivered_rate)
         • Not sent (hs_failed_sends)
         • Object create date/time (hs_createdate)
-            ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • Object last modified date/time (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
         • Owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
         • Owner assigned date (hubspot_owner_assigneddate)
-            ⤷ The most recent timestamp of when an owner was assigned to this record. This value is set automatically by HubSpot.
         • Owner's main team (hubspot_team_id)
-            ⤷ The team of the owner of a contact.
         • Publish status (hs_publish_status)
             ◦ Draft (DRAFT) [READ-ONLY]
             ◦ Scheduled (SCHEDULED) [READ-ONLY]
@@ -4910,15 +4783,10 @@ sms
         • Published By Name (hs_published_by_name)
         • Published by email (hs_published_by_email)
         • Record ID (hs_object_id)
-            ⤷ The unique ID for this record. This value is set automatically by HubSpot.
         • Record source (hs_object_source_label)
-            ⤷ How this record was created.
         • Record source detail 1 (hs_object_source_detail_1)
-            ⤷ First level of detail on how this record was created.
         • Record source detail 2 (hs_object_source_detail_2)
-            ⤷ Second level of detail on how this record was created.
         • Record source detail 3 (hs_object_source_detail_3)
-            ⤷ Third level of detail on how this record was created.
         • SMS name (hs_name)
         • Sending method (hs_sms_type)
             ◦ Regular (BATCH)
@@ -4944,7 +4812,6 @@ sms
         • Total clicks (hs_total_clicks)
         • Unique clicks (hs_unique_clicks)
         • Updated by user ID (hs_updated_by_user_id)
-            ⤷ The user who last updated this record. This value is set automatically by HubSpot.
         • Updated date (hs_updated_at)
 
 Segment List
@@ -4970,7 +4837,6 @@ Segment List
             ◦ Sponsored in‑person events
         • Cluster Segment Description (hs_cluster_segment_description)
         • Created by user ID (hs_created_by_user_id)
-            ⤷ The user who created this record. This value is set automatically by HubSpot.
         • Description (hs_description)
         • Email Click Through Rate (hs_click_through_rate)
         • Email Open Rate (hs_email_open_rate)
@@ -4989,35 +4855,24 @@ Segment List
             ◦ Everyone edit (EVERYONE_EDIT)
         • Lookalikes AI Summary (hs_lookalike_ai_summary)
         • Merged record IDs (hs_merged_object_ids)
-            ⤷ The list of Contact record IDs that have been merged into this Contact. This value is set automatically by HubSpot.
         • Notifications (hs_list_notifications)
             ◦ Edited or deleted (list_definition_updated)
             ◦ Count reached (list_size_reaches_count)
             ◦ Size anomaly detected (list_size_change_anomaly_detected)
         • Object Type (hs_object_type_id)
         • Object create date/time (hs_createdate)
-            ⤷ The date and time at which this object was created. This value is automatically set by HubSpot and may not be modified.
         • Object last modified date/time (hs_lastmodifieddate)
-            ⤷ Most recent timestamp of any property update for this deal. This includes HubSpot internal properties, which can be visible or hidden. This property is updated automatically.
         • Owner (hubspot_owner_id)
-            ⤷ The owner of a contact. This can be any HubSpot user or Salesforce integration user, and can be set manually or via Workflows.
         • Owner assigned date (hubspot_owner_assigneddate)
-            ⤷ The most recent timestamp of when an owner was assigned to this record. This value is set automatically by HubSpot.
         • Owner's main team (hubspot_team_id)
-            ⤷ The team of the owner of a contact.
         • Read only (hs_is_read_only)
             ◦ Yes (true)
             ◦ No (false)
         • Record ID (hs_object_id)
-            ⤷ The unique ID for this record. This value is set automatically by HubSpot.
         • Record source (hs_object_source_label)
-            ⤷ How this record was created.
         • Record source detail 1 (hs_object_source_detail_1)
-            ⤷ First level of detail on how this record was created.
         • Record source detail 2 (hs_object_source_detail_2)
-            ⤷ Second level of detail on how this record was created.
         • Record source detail 3 (hs_object_source_detail_3)
-            ⤷ Third level of detail on how this record was created.
         • Segment Name (hs_list_name)
         • Segment version (hs_list_version)
         • Tags (tags)
@@ -5038,7 +4893,6 @@ Segment List
             ◦ Yes (true)
             ◦ No (false)
         • Updated by user ID (hs_updated_by_user_id)
-            ⤷ The user who last updated this record. This value is set automatically by HubSpot.
         • Used in (hs_list_reference_categories)
             ◦ Ads (1)
             ◦ Blogs (4)
